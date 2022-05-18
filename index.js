@@ -9,13 +9,10 @@ const port = process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+app.use(express.static('public'));
 
 app.set('views', 'articles');
 app.set('view engine', 'ejs');
-
-app.listen(port, () => {
-	console.log(`Your app is listening on ${port}...`);
-});
 
 app.get('/posts/:article', (req, res) => {
 	const file = matter.read(`./articles/posts/${req.params.article}.md`);
@@ -35,4 +32,8 @@ app.get('/', (req, res) => {
 	res.render('index', {
 		posts: posts
 	});
+});
+
+app.listen(port, () => {
+	console.log(`Your app is listening on ${port}...`);
 });
