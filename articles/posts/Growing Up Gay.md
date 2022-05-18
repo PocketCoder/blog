@@ -1,6 +1,6 @@
 ---
 title: 'Growing Up Gay'
-description: 'A nice description of this post'
+description: 'A piece on my experience growing up gay in Norwich.'
 category: 'On'
 ---
 

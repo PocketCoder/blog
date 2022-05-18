@@ -1,6 +1,6 @@
 ---
 title: 'UCQP'
-description: 'A short story chronicling the '
+description: 'A short story chronicling the plight of a gay youth.'
 category: 'Fic'
 ---
 
@@ -18,7 +18,7 @@ Backing out of sight of the fence, his mind wanders to their complexions: the ma
 
 Then he hears something. A soft giggling that creeps out of a dark corner. Caught gasps and a hurried hushing. Aidan’s hand brushes along the fence as he moves tentatively to the source. He stops; he breathes; he peers round and he sees: a man, down on his knees, taking in another. Together they laugh. Perhaps because of some inside joke, perhaps because of their risqué adventure, perhaps both. Looking on at this act of love—the kind of love he has only so far seen online, in the safety of darkened tabs—he smiles alone with them. He takes a mental picture of their bodies, too: chest hair and pecs, beards and bushes. He watches until they come, together and in joy. Aidan backs away.
 
-He circles back to the doors; sits on a brick wall. He swipes through five people on his phone before he’s out of potential matches, again; he switches apps to admire the established men who could be like a father to him\[ “the thing about the potential father figure is a little much I think – the piece is saying that already really successfully” - PH\]; on another he pulls to refresh a list of those in his area, they’re all within three-hundred meters, they’re all inside. He checks his list of messages and finds they’re swamped, as always, with old men unable to accept his silence, the pictures of their dicks unappetising bait. He stares at the unanswered messages he once sent someone who looks vaguely like his age, the “18” on both of their profiles an uncheckable, common lie. They’re both searching for the same thing, but neither want the other.
+He circles back to the doors; sits on a brick wall. He swipes through five people on his phone before he’s out of potential matches, again; he switches apps to admire the established men who could be like a father to him; on another he pulls to refresh a list of those in his area, they’re all within three-hundred meters, they’re all inside. He checks his list of messages and finds they’re swamped, as always, with old men unable to accept his silence, the pictures of their dicks unappetising bait. He stares at the unanswered messages he once sent someone who looks vaguely like his age, the “18” on both of their profiles an uncheckable, common lie. They’re both searching for the same thing, but neither want the other.
 
 > ### ii.
 
