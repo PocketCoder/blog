@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const matter = require('gray-matter');
 const fs = require('fs');
 
+const port = process.env.PORT || 4000;
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
@@ -31,6 +33,6 @@ app.get('/', (req, res) => {
 	});
 });
 
-app.listen(process.env.PORT || 4000, () => {
-	console.log('Your app is listening...');
+app.listen(port, () => {
+	console.log(`Your app is listening on ${port}...`);
 });
