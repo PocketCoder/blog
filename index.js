@@ -35,7 +35,9 @@ app.get('/', (req, res) => {
 	const posts = fs.readdirSync('articles/posts/').filter((file) => file.endsWith('.md'));
 	for (const x in posts) {
 		const file = matter.read(`./articles/posts/${posts[x]}`);
-		let md = require('markdown-it')();
+		let md = require('markdown-it')({
+			html: true
+		});
 		let content = file.content;
 		let result = md.render(content);
 		postsData[posts[x]] = {
