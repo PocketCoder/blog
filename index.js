@@ -4,6 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const matter = require('gray-matter');
 const fs = require('fs');
+const { nextTick } = require('process');
 
 const port = process.env.PORT || 4000;
 
@@ -13,6 +14,14 @@ app.use(express.static('public'));
 
 app.set('views', 'articles');
 app.set('view engine', 'ejs');
+
+app.get('*', function(req, res, next) {  
+	if (req.headers.host !== 'localhost:' + port) {
+		res.redirect('https://' + req.headers.host + req.url);
+	} else {
+		next();
+	}
+});
 
 app.get('/posts/:article', (req, res) => {
 	const file = matter.read(`./articles/posts/${req.params.article}.md`);
