@@ -1,0 +1,18 @@
+{
+	"name": "blog.10399.xyz",
+	"version": "1.0.0",
+	"description": "Personal blog",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Jake Williams",
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "^1.20.0",
+		"ejs": "^3.1.8",
+		"express": "^4.18.1",
+		"gray-matter": "^4.0.3",
+		"markdown-it": "^13.0.1"
+	}
+}

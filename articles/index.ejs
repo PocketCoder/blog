@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs') %>
+    <div id="blog">
+      <% if (posts !== []) { %>
+        <% for (post of posts) { %>
+          <a href="/posts/<%= post.slice(0, -3) %>">
+            <div class="post">
+              <%= post.toUpperCase() %>
+            </div>
+          </a>
+        <% } %>
+      <% } else { %>
+        <p>No posts yet!</p>
+      <% } %>
+    </div>
+<%- include('partials/footer.ejs') %>
