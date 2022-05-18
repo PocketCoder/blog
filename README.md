@@ -6,4 +6,4 @@ My blog, full of stories, thoughts, ideas...
 
 There is some stuff there.
 
-First time using ejs too which is fun.
+First time using `ejs` too which is fun.
