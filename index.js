@@ -55,6 +55,8 @@ app.get('/', (req, res) => {
 	});
 });
 
+app.use(express.static('public'));
+
 app.listen(port, () => {
 	console.log(`Your app is listening on ${port}...`);
 });
