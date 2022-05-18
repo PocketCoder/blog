@@ -1,7 +1,10 @@
 <%- include('partials/header.ejs') %>
     <div id="blog">
-      <h1><%= title %></h1>
+      <h1><%= category + ': ' + title %></h1>
       <p><%= description %></p>
-      <%- post %>
+      <hr>
+      <main>
+        <%- post %>
+      </main>
     </div>
 <%- include('partials/footer.ejs') %>
