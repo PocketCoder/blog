@@ -1,11 +1,16 @@
 <%- include('partials/header.ejs') %>
     <div id="blog">
       <% if (posts !== []) { %>
-        <% for (post of posts) { %>
-          <a  class="post" href="/posts/<%= post.slice(0, -3) %>">
-              &gt; <%= data[post].category + ': ' + data[post].title.toUpperCase() %>
-          </a>
-        <% } %>
+        <h2>Posts:</h2>
+        <ul>
+          <% for (post of posts) { %>
+            <li>
+              <a  class="post" href="/posts/<%= post.slice(0, -3) %>">
+                <%= data[post].category + ': ' + data[post].title.toUpperCase() %>
+              </a>
+            </li>
+          <% } %>
+        </ul>
       <% } else { %>
         <p>No posts yet!</p>
       <% } %>
