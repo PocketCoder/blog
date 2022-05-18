@@ -53,6 +53,7 @@ app.get('/', (req, res) => {
 	}
 	res.render('index', {
 		posts: posts,
+		title: 'Home',
 		data: postsData
 	});
 });

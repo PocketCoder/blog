@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="Jake Williams">
 
-        <title>blog.110399.xyz</title>
+        <title><%= title %> | blog.110399.xyz</title>
         <style>
             body {
                 font-family: 'Baskerville', serif;
@@ -14,6 +14,26 @@
 
             header {
                 margin-bottom: 20px;
+            }
+
+            header a:visited {
+                color: blue;
+            }
+
+            .post {
+                display: block;
+                margin: 5px 0 10px 0;
+                color: blue;
+                transition: all 0.25s ease;
+            }
+
+            .post:hover {
+                margin-left: 10px;
+            }
+
+            .post:visited {
+                color: black;
+                text-decoration: overline;
             }
 
             main {

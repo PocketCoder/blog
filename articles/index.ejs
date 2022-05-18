@@ -2,10 +2,8 @@
     <div id="blog">
       <% if (posts !== []) { %>
         <% for (post of posts) { %>
-          <a href="/posts/<%= post.slice(0, -3) %>">
-            <div class="post">
+          <a  class="post" href="/posts/<%= post.slice(0, -3) %>">
               &gt; <%= data[post].category + ': ' + data[post].title.toUpperCase() %>
-            </div>
           </a>
         <% } %>
       <% } else { %>
