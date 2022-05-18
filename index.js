@@ -4,7 +4,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const matter = require('gray-matter');
 const fs = require('fs');
-const { nextTick } = require('process');
+const {nextTick} = require('process');
 
 const port = process.env.PORT || 4000;
 
@@ -31,6 +31,7 @@ app.get('/posts/:article', (req, res) => {
 
 app.get('/', (req, res) => {
 	let postsData = {};
+	let catList = [];
 	const posts = fs.readdirSync('articles/posts/').filter((file) => file.endsWith('.md'));
 	for (const x in posts) {
 		const file = matter.read(`./articles/posts/${posts[x]}`);
@@ -42,11 +43,15 @@ app.get('/', (req, res) => {
 			description: file.data.description,
 			category: file.data.category
 		};
+		if (!catList.includes(file.data.category)) {
+			catList.push(file.data.category);
+		}
 	}
 	res.render('index', {
 		posts: posts,
 		title: 'Home',
-		data: postsData
+		data: postsData,
+		catList: catList
 	});
 });
 

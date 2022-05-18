@@ -2,10 +2,17 @@
     <div id="blog">
       <% if (posts !== []) { %>
         <h2>Posts:</h2>
-        <ul>
+        <ul id="cats">
+          <li>Filter:</li>
+          <li><a href="#" onclick="filterPosts('all')">All</a></li>
+          <% for (cat of catList) { %>
+            <li><a href="#" onclick="filterPosts('<%= cat %>')"><%= cat %></a></li>
+          <% } %>
+        </ul>
+        <ul id="posts">
           <% for (post of posts) { %>
-            <li>
-              <a  class="post" href="/posts/<%= post.slice(0, -3) %>">
+            <li class="<%= data[post].category %> all">
+              <a class="post" href="/posts/<%= post.slice(0, -3) %>">
                 <%= data[post].category + ': ' + data[post].title.toUpperCase() %>
               </a>
             </li>
@@ -15,4 +22,17 @@
         <p>No posts yet!</p>
       <% } %>
     </div>
+    <script>
+      function filterPosts(c) {
+        const hideEls = document.querySelectorAll(`#posts li:not([class~='${c}'])`);
+        const showEls = document.querySelectorAll(`#posts li[class~='${c}']`);
+        console.log({c, hideEls, showEls});
+        hideEls.forEach((e) => {
+          e.style.display = 'none';
+        });
+        showEls.forEach((e) => {
+          e.style.display = '';
+        });
+      }
+    </script>
 <%- include('partials/footer.ejs') %>
