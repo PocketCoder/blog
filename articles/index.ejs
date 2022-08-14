@@ -13,7 +13,10 @@
           <% for (post of posts) { %>
             <li class="<%= data[post].category %> all">
               <a class="post" href="/posts/<%= post.slice(0, -3) %>">
+                <% console.log(data[post].title); %>
+                <% if (data[post].title !== '') { %>
                 <%= data[post].category + ': ' + data[post].title.toUpperCase() %>
+                <%} else {}%>
               </a>
             </li>
           <% } %>

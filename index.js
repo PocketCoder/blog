@@ -49,6 +49,7 @@ app.get('/', (req, res) => {
 			catList.push(file.data.category);
 		}
 	}
+	console.log(postsData);
 	res.render('index', {
 		posts: posts,
 		title: 'Home',
